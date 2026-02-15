@@ -1,0 +1,498 @@
+<!doctype html>
+
+<html class="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>About Us | Maxwell Handyman Services</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Google Fonts: Inter -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Material Symbols Outlined -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#002447",
+              "background-light": "#f5f7f8",
+              "background-dark": "#0f1923",
+            },
+            fontFamily: {
+              display: ["Inter", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-background-light dark:bg-background-dark text-slate-900 font-display transition-colors duration-300"
+  >
+    <!-- Header Section -->
+    <header
+      class="sticky top-0 z-50 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16 sm:h-20">
+          <!-- Logo -->
+          <div class="flex items-center gap-2 text-primary dark:text-white">
+            <span
+              class="material-symbols-outlined text-3xl"
+              data-icon="home_repair_service"
+              >home_repair_service</span
+            >
+            <h2 class="text-lg sm:text-xl font-bold tracking-tight">
+              Maxwell Handyman Services
+            </h2>
+          </div>
+          <!-- Navigation -->
+          <nav class="hidden md:flex items-center gap-8">
+            <a
+              class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-white transition-colors"
+              href="/"
+              >Home</a
+            >
+            <a
+              class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-white transition-colors"
+              href="../services/"
+              >Services</a
+            >
+            <a
+              class="text-sm font-bold text-primary dark:text-white transition-colors border-b-2 border-primary"
+              href="../about/"
+              >About</a
+            >
+            <a
+              class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-white transition-colors"
+              href="../contact/"
+              >Contact</a
+            >
+          </nav>
+          <!-- CTA & Profile -->
+          <div class="flex items-center gap-4">
+            <button
+              class="hidden sm:flex min-w-[120px] cursor-pointer items-center justify-center rounded-lg h-10 px-6 bg-primary text-white text-sm font-bold transition-all hover:bg-primary/90 hover:shadow-lg"
+            >
+              Book Now
+            </button>
+            <div
+              class="h-10 w-10 rounded-full bg-slate-200 dark:bg-slate-700 bg-cover bg-center border-2 border-white dark:border-slate-800 shadow-sm"
+              data-alt="Professional headshot of a service manager"
+              style="
+                background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuDp0IVN3iuvqy7-Bp_wYyVl47KKRQsCf3y6KNJLXe6bHWLC6zAxVTxAaDYQyiVSWSC2dgpAVmnCuJ9N8ggjFcG-tqU_Li8J33ZrRVbWZOMnvs5Wj15nfwG3SCRQnioSkBkGXo0gNXOKYGXQ2kstja3_IQBfZrLrH3f5sB9KVyn889-NnDdopznpFuHk9IbKg7h_XS3-N_kZ0egr_5wKjy9K7PjXn8bqhtkb7FUqRdsMe1lQswO8kop6N1Erb6D73efoeKYfRvLGQ7E&quot;);
+              "
+            ></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Hero Section -->
+      <section
+        class="relative bg-white dark:bg-background-dark overflow-hidden border-b border-slate-100 dark:border-slate-800"
+      >
+        <div
+          class="max-w-7xl mx-auto px-4 py-16 sm:py-24 lg:flex lg:items-center lg:gap-12"
+        >
+          <div class="lg:w-1/2">
+            <span
+              class="inline-block px-3 py-1 text-xs font-bold tracking-wider text-primary uppercase bg-primary/10 rounded-full mb-4"
+              >Established Professionals</span
+            >
+            <h1
+              class="text-4xl sm:text-5xl lg:text-6xl font-black text-primary dark:text-white leading-[1.1] tracking-tight mb-6"
+            >
+              About Maxwell Handyman Services
+            </h1>
+            <p
+              class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed mb-8"
+            >
+              Dedicated to providing South Africa with professional,
+              high-quality maintenance and repair solutions. We turn houses into
+              homes and offices into workspaces.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <button
+                class="flex items-center justify-center px-8 py-4 bg-primary text-white font-bold rounded-lg shadow-xl hover:translate-y-[-2px] transition-all"
+              >
+                View Our Services
+              </button>
+              <div
+                class="flex items-center gap-2 px-4 py-4 text-primary dark:text-white font-semibold"
+              >
+                <span
+                  class="material-symbols-outlined"
+                  data-icon="verified_user"
+                  >verified_user</span
+                >
+                Fully Licensed &amp; Insured
+              </div>
+            </div>
+          </div>
+          <div class="mt-12 lg:mt-0 lg:w-1/2">
+            <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+              <div
+                class="aspect-video bg-cover bg-center transform hover:scale-105 transition-transform duration-700"
+                data-alt="Professional handyman tools organized on a clean workbench"
+                style="
+                  background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuCrsl5aH4oXUrYtscc-SoO9rVYfN5zUb9aJaEr_FoeHkXT8g2lyrHmNhK_O7pjAaEX-45wT-AkIGCFg9y_d_yYRKdKOXF1c2egkOZbukrP6lziSTLNU0vb3mUCY0wdEVF-oJLwLyG0LL6MIiY5zOvj3ZkeeEJyPLkqfbFXwQwLFDPoHT5ZTBYZXq5regXLrZm4za85gm3JvvsNT-9oBqvn91rpVqiKvlpqqtu-DK02ve8iaUUfklGe-s5RAdndO_OQV9abvz2-a_mM&quot;);
+                "
+              ></div>
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Story Section -->
+      <section class="py-20 bg-background-light dark:bg-background-dark/50">
+        <div class="max-w-7xl mx-auto px-4">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="order-2 lg:order-1">
+              <div class="grid grid-cols-2 gap-4">
+                <div class="space-y-4 pt-8">
+                  <img
+                    class="rounded-xl shadow-lg w-full h-64 object-cover"
+                    data-alt="Electrician working on a circuit board"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8yZrfi__TTS26WTCDvoLef3_TCiAe0tPb_t4DW9QQkNe3lB523MXUbWu0NLq3KGcspvyJKNVutPtyPjlWzPEGwbNyfc79olGGesxgQ-IJUDqkd2Qvzh6KFr2QEOMXdDq6yMnS5lH66HDrH5qLKkhz-T30BIwOKajOHr3yrdx95PEaxTSGPmbSsH-214C6Xqblakd3NdAFn5yPahpB_U7n07EEIVqHisYcB-CPB8dSNIbces2fBD0TFV9xnCLDYCbitH1Uf19XjDc"
+                  />
+                  <img
+                    class="rounded-xl shadow-lg w-full h-48 object-cover"
+                    data-alt="Close up of high quality wood joinery"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZ1bSfomBZz0HAwSLUHUI-JDDQ37ZuPVfetk9qmWUYyr-sVQzppRS6y2RSRj36BROtAVrL72f3Dqs_q_aAyA2k4KN7xQy9D5-Bwyuyw4wAauMWiuEsEe4akKgduF69mRNbI5RM_k_Zn_04yj65qF4OK-PtlviIjqgXIBMUp-dtZQX-jwxROfN6tLpiy-v9a7zDQIefMXzl-XU-SjXMeQkhwTEWBrygCq_BFGn5LDUkAvlHet7B9f1sV1fXLXUIFvCNbe52TQ9QA8M"
+                  />
+                </div>
+                <div class="space-y-4">
+                  <img
+                    class="rounded-xl shadow-lg w-full h-48 object-cover"
+                    data-alt="Plumber fixing a sink faucet"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtXF02C64NVNMA6eLX1ex3f2N-dtXwJYJ7u18G58lgny2C5_JhYmbp0TPKxOLSV1KhPZDdbsgOOA6TxiYEjVWhN0VLHFn5P0Twk1yjovaOFTasjOf0UydRWyPquGGDb0ktbKbJD-qLyFa5cCoEWYt84k85ED1E8iaPBSbLPsOvZdPt7Dlp7rTIoLrJDViGQMXqJRLrTdBReGiYu29z1H-KbtaVdlSsYoEA4dR1_1m-nJlIysUtzbZS2kK0BrWHsCSNe4TCv7XGYrM"
+                  />
+                  <img
+                    class="rounded-xl shadow-lg w-full h-64 object-cover"
+                    data-alt="Construction site with South African landscape background"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFycfyOC8xkH6cGWAcsi_3lfgKHYoPEunuWzzbTUiEIKmMMgmmyZP_VeJY_GTuTLOBWHYlkVXwOzOT2BlQ8_fd5M0KMH0R9l1YCk1lHCT89E4AG8bdNtgqxVocM-hmw_OR_PgKc5oEog-Z1C9zopkl2SQ7a3gBhDkTY8pHcUX8uZbbik95aTlU0BMMghatPJvj_PLEam0p4XQPi8ttwexS5FChHHNN6cXAnLde3t8-ikIZOmIjjqN3jMiZSl11uxa-9Zsr7P7gHbQ"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="order-1 lg:order-2">
+              <h2 class="text-3xl font-bold text-primary dark:text-white mb-6">
+                Our Story: Years of Dedication to Local Quality
+              </h2>
+              <div class="space-y-4 text-slate-600 dark:text-slate-400">
+                <p>
+                  Founded on the principles of hard work and South African
+                  craftsmanship, Maxwell Handyman Services has grown from a
+                  small local operation into a trusted name for home and office
+                  maintenance across the region.
+                </p>
+                <p>
+                  Our journey began with a simple observation: South African
+                  homeowners needed someone reliable who combined technical
+                  skill with true professional integrity. We believe in fixing
+                  it right the first time, using materials and techniques that
+                  stand up to the local climate.
+                </p>
+                <p
+                  class="font-medium text-primary dark:text-white border-l-4 border-primary pl-4 py-2 italic"
+                >
+                  "Quality is not an act, it is a habit. We treat every home as
+                  if it were our own."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Values Section -->
+      <section class="py-20 bg-white dark:bg-background-dark">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+          <h2 class="text-3xl font-bold text-primary dark:text-white mb-4">
+            Our Core Values
+          </h2>
+          <p class="text-slate-500 max-w-2xl mx-auto mb-16">
+            The pillars of our service that ensure your peace of mind and
+            satisfaction every single time.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Value 1 -->
+            <div
+              class="p-8 rounded-2xl bg-background-light dark:bg-slate-800/50 hover:shadow-xl transition-shadow group"
+            >
+              <div
+                class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center text-primary dark:text-white mb-6 mx-auto group-hover:bg-primary group-hover:text-white transition-colors"
+              >
+                <span
+                  class="material-symbols-outlined text-4xl"
+                  data-icon="schedule"
+                  >schedule</span
+                >
+              </div>
+              <h3 class="text-xl font-bold text-primary dark:text-white mb-3">
+                Reliability
+              </h3>
+              <p class="text-slate-600 dark:text-slate-400">
+                We value your time. Our team arrives promptly, follows through
+                on schedules, and never leaves a job unfinished.
+              </p>
+            </div>
+            <!-- Value 2 -->
+            <div
+              class="p-8 rounded-2xl bg-background-light dark:bg-slate-800/50 hover:shadow-xl transition-shadow group"
+            >
+              <div
+                class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center text-primary dark:text-white mb-6 mx-auto group-hover:bg-primary group-hover:text-white transition-colors"
+              >
+                <span
+                  class="material-symbols-outlined text-4xl"
+                  data-icon="visibility"
+                  >visibility</span
+                >
+              </div>
+              <h3 class="text-xl font-bold text-primary dark:text-white mb-3">
+                Transparency
+              </h3>
+              <p class="text-slate-600 dark:text-slate-400">
+                Clear communication and honest pricing. No hidden fees, just
+                straightforward quotes and detailed project updates.
+              </p>
+            </div>
+            <!-- Value 3 -->
+            <div
+              class="p-8 rounded-2xl bg-background-light dark:bg-slate-800/50 hover:shadow-xl transition-shadow group"
+            >
+              <div
+                class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center text-primary dark:text-white mb-6 mx-auto group-hover:bg-primary group-hover:text-white transition-colors"
+              >
+                <span
+                  class="material-symbols-outlined text-4xl"
+                  data-icon="star"
+                  >star</span
+                >
+              </div>
+              <h3 class="text-xl font-bold text-primary dark:text-white mb-3">
+                Excellence
+              </h3>
+              <p class="text-slate-600 dark:text-slate-400">
+                From the smallest repair to major renovations, we maintain a
+                standard of finish that exceeds expectations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Team/Owner Bio -->
+      <section class="py-20 bg-background-light dark:bg-background-dark/30">
+        <div class="max-w-4xl mx-auto px-4">
+          <div
+            class="bg-white dark:bg-slate-800 rounded-3xl p-8 md:p-12 shadow-sm border border-slate-200 dark:border-slate-700 flex flex-col md:flex-row items-center gap-10"
+          >
+            <div class="w-48 h-48 md:w-64 md:h-64 flex-shrink-0">
+              <img
+                class="w-full h-full object-cover rounded-2xl shadow-md border-4 border-white dark:border-slate-700"
+                data-alt="Lead handyman smiling at the camera in professional work attire"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoYXPy25jF-DBU0b8yIPVnzfflG1LdXpkOmXxNByTYYv5T4g6TGL47BrLNog7tCQi0hWvcaQYkFeaUcoClow9LS3PmSsS74ivPKFT0y8fXylUDCBBB94Zy2WUxBbES3kG8DbZD_Yw9vRPBrbt7ZgH8Hf29kYnxyQ9ztIorOsE9nL87es8mSIPmsnzzi0oYXYTkzZToR7MIrTTgjxSRsGui20YPh-Bn2MPYla6D1lgOfGE4D2uQE5QCnAVr7N5p26EJUK2oaCbD1X4"
+              />
+            </div>
+            <div>
+              <h4
+                class="text-primary dark:text-white text-sm font-bold uppercase tracking-widest mb-2"
+              >
+                Meet Our Lead Handyman
+              </h4>
+              <h2
+                class="text-3xl font-bold text-slate-900 dark:text-white mb-4"
+              >
+                Maxwell Sibanda
+              </h2>
+              <p
+                class="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed"
+              >
+                With over 15 years of multi-disciplinary maintenance experience,
+                Maxwell is the driving force behind our commitment to quality.
+                Certified in both electrical and plumbing systems, he personally
+                oversees every major project to ensure it meets the "Maxwell
+                Standard."
+              </p>
+              <div class="flex gap-4">
+                <div
+                  class="text-center px-4 py-2 rounded-lg bg-primary/5 dark:bg-primary/20"
+                >
+                  <span
+                    class="block text-2xl font-bold text-primary dark:text-white"
+                    >15+</span
+                  >
+                  <span class="text-[10px] uppercase font-bold text-slate-500"
+                    >Years Experience</span
+                  >
+                </div>
+                <div
+                  class="text-center px-4 py-2 rounded-lg bg-primary/5 dark:bg-primary/20"
+                >
+                  <span
+                    class="block text-2xl font-bold text-primary dark:text-white"
+                    >500+</span
+                  >
+                  <span class="text-[10px] uppercase font-bold text-slate-500"
+                    >Projects Done</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CTA Section -->
+      <section class="py-20 relative overflow-hidden">
+        <div class="absolute inset-0 bg-primary z-0">
+          <div
+            class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"
+          ></div>
+        </div>
+        <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+          <h2 class="text-4xl font-black text-white mb-6 leading-tight">
+            Ready to fix that problem? <br />Let's talk about your project
+            today.
+          </h2>
+          <p class="text-white/80 text-lg mb-10 max-w-2xl mx-auto">
+            Whether it's a leaky tap or a full office refurbishment, we provide
+            free estimates and expert advice.
+          </p>
+          <div
+            class="flex flex-col sm:flex-row items-center justify-center gap-4"
+          >
+            <button
+              class="w-full sm:w-auto px-10 py-4 bg-white text-primary font-bold rounded-xl shadow-2xl hover:bg-slate-100 transition-all flex items-center justify-center gap-2"
+            >
+              <span class="material-symbols-outlined" data-icon="mail"
+                >mail</span
+              >
+              Request a Quote
+            </button>
+            <a
+              class="w-full sm:w-auto px-10 py-4 border-2 border-white/30 text-white font-bold rounded-xl hover:bg-white/10 transition-all flex items-center justify-center gap-2"
+              href="tel:+27123456789"
+            >
+              <span class="material-symbols-outlined" data-icon="call"
+                >call</span
+              >
+              Call Us Now
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer
+      class="bg-background-dark text-slate-400 py-12 border-t border-slate-800"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-12"
+      >
+        <div>
+          <div class="flex items-center gap-2 text-white mb-6">
+            <span
+              class="material-symbols-outlined text-2xl"
+              data-icon="home_repair_service"
+              >home_repair_service</span
+            >
+            <h2 class="text-lg font-bold tracking-tight">
+              Maxwell Handyman Services
+            </h2>
+          </div>
+          <p class="text-sm leading-relaxed">
+            South Africa's trusted choice for professional property maintenance.
+            Quality you can see, reliability you can trust.
+          </p>
+        </div>
+        <div>
+          <h4 class="text-white font-bold mb-6">Quick Links</h4>
+          <ul class="space-y-3 text-sm">
+            <li>
+              <a class="hover:text-white transition-colors" href="#"
+                >Our Services</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-white transition-colors" href="#"
+                >Project Gallery</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-white transition-colors" href="#"
+                >Terms of Service</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-white transition-colors" href="#"
+                >Privacy Policy</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold mb-6">Connect</h4>
+          <div class="flex gap-4 mb-6">
+            <a
+              class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary transition-colors"
+              href="#"
+            >
+              <span
+                class="material-symbols-outlined text-xl"
+                data-icon="facebook"
+                >social_leaderboard</span
+              >
+            </a>
+            <a
+              class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary transition-colors"
+              href="#"
+            >
+              <span class="material-symbols-outlined text-xl" data-icon="camera"
+                >camera</span
+              >
+            </a>
+          </div>
+          <p class="text-xs">
+            © 2024 Maxwell Handyman Services. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

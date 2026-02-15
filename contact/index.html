@@ -1,0 +1,476 @@
+<!doctype html>
+
+<html class="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Contact &amp; Quote | Maxwell Handyman Services</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#002447",
+              "background-light": "#f5f7f8",
+              "background-dark": "#0f1923",
+            },
+            fontFamily: {
+              display: ["Inter", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      .form-input:focus {
+        border-color: #002447;
+        ring: 0;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-background-light dark:bg-background-dark text-slate-900 font-display"
+  >
+    <!-- Header / TopNavBar -->
+    <header
+      class="sticky top-0 z-50 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16 sm:h-20">
+          <!-- Logo -->
+          <div class="flex items-center gap-2 text-primary dark:text-white">
+            <span
+              class="material-symbols-outlined text-3xl"
+              data-icon="home_repair_service"
+              >home_repair_service</span
+            >
+            <h2 class="text-lg sm:text-xl font-bold tracking-tight">
+              Maxwell Handyman Services
+            </h2>
+          </div>
+          <!-- Navigation -->
+          <nav class="hidden md:flex items-center gap-8">
+            <a
+              class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-white transition-colors"
+              href="/"
+              >Home</a
+            >
+            <a
+              class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-white transition-colors"
+              href="../services/"
+              >Services</a
+            >
+            <a
+              class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-white transition-colors"
+              href="../about/"
+              >About</a
+            >
+            <a
+              class="text-sm font-bold text-primary dark:text-white transition-colors border-b-2 border-primary"
+              href="../contact/"
+              >Contact</a
+            >
+          </nav>
+          <!-- CTA & Profile -->
+          <div class="flex items-center gap-4">
+            <button
+              class="hidden sm:flex min-w-[120px] cursor-pointer items-center justify-center rounded-lg h-10 px-6 bg-primary text-white text-sm font-bold transition-all hover:bg-primary/90 hover:shadow-lg"
+            >
+              Book Now
+            </button>
+            <div
+              class="h-10 w-10 rounded-full bg-slate-200 dark:bg-slate-700 bg-cover bg-center border-2 border-white dark:border-slate-800 shadow-sm"
+              data-alt="Professional headshot of a service manager"
+              style="
+                background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuDp0IVN3iuvqy7-Bp_wYyVl47KKRQsCf3y6KNJLXe6bHWLC6zAxVTxAaDYQyiVSWSC2dgpAVmnCuJ9N8ggjFcG-tqU_Li8J33ZrRVbWZOMnvs5Wj15nfwG3SCRQnioSkBkGXo0gNXOKYGXQ2kstja3_IQBfZrLrH3f5sB9KVyn889-NnDdopznpFuHk9IbKg7h_XS3-N_kZ0egr_5wKjy9K7PjXn8bqhtkb7FUqRdsMe1lQswO8kop6N1Erb6D73efoeKYfRvLGQ7E&quot;);
+              "
+            ></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8 lg:py-12">
+      <!-- Hero Section Title -->
+      <div class="mb-10 lg:mb-16">
+        <h1
+          class="text-4xl lg:text-5xl font-black text-primary dark:text-white tracking-tight mb-4"
+        >
+          Get Your Home Project Started
+        </h1>
+        <p class="text-lg text-slate-600 dark:text-slate-400 max-w-2xl">
+          Request a free quote or get in touch with our expert team. We're here
+          to help with repairs, maintenance, and home improvements.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        <!-- Left Side: Quote Form -->
+        <div
+          class="lg:col-span-7 bg-white dark:bg-slate-900 rounded-xl shadow-sm border border-slate-200 dark:border-slate-800 p-6 sm:p-8"
+        >
+          <h2
+            class="text-2xl font-bold text-primary dark:text-white mb-8 flex items-center gap-2"
+          >
+            <span class="material-symbols-outlined text-primary"
+              >description</span
+            >
+            Quote Request Form
+          </h2>
+          <form class="space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="flex flex-col gap-2">
+                <label
+                  class="text-sm font-semibold text-slate-700 dark:text-slate-300"
+                  >Full Name</label
+                >
+                <input
+                  class="w-full rounded-lg border-slate-300 dark:border-slate-700 dark:bg-slate-800 dark:text-white focus:ring-primary focus:border-primary h-12 px-4 transition-all"
+                  placeholder="e.g. John Doe"
+                  type="text"
+                />
+              </div>
+              <div class="flex flex-col gap-2">
+                <label
+                  class="text-sm font-semibold text-slate-700 dark:text-slate-300"
+                  >Phone Number</label
+                >
+                <input
+                  class="w-full rounded-lg border-slate-300 dark:border-slate-700 dark:bg-slate-800 dark:text-white focus:ring-primary focus:border-primary h-12 px-4 transition-all"
+                  placeholder="e.g. 0412 345 678"
+                  type="tel"
+                />
+              </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="flex flex-col gap-2">
+                <label
+                  class="text-sm font-semibold text-slate-700 dark:text-slate-300"
+                  >Email Address</label
+                >
+                <input
+                  class="w-full rounded-lg border-slate-300 dark:border-slate-700 dark:bg-slate-800 dark:text-white focus:ring-primary focus:border-primary h-12 px-4 transition-all"
+                  placeholder="e.g. john@example.com"
+                  type="email"
+                />
+              </div>
+              <div class="flex flex-col gap-2">
+                <label
+                  class="text-sm font-semibold text-slate-700 dark:text-slate-300"
+                  >Suburb</label
+                >
+                <input
+                  class="w-full rounded-lg border-slate-300 dark:border-slate-700 dark:bg-slate-800 dark:text-white focus:ring-primary focus:border-primary h-12 px-4 transition-all"
+                  placeholder="e.g. Bondi Junction"
+                  type="text"
+                />
+              </div>
+            </div>
+            <div class="flex flex-col gap-2">
+              <label
+                class="text-sm font-semibold text-slate-700 dark:text-slate-300"
+                >Service Type</label
+              >
+              <select
+                class="w-full rounded-lg border-slate-300 dark:border-slate-700 dark:bg-slate-800 dark:text-white focus:ring-primary focus:border-primary h-12 px-4 transition-all appearance-none"
+              >
+                <option value="">Select a service...</option>
+                <option value="repairs">General Repairs</option>
+                <option value="plumbing">Basic Plumbing</option>
+                <option value="electrical">Electrical Maintenance</option>
+                <option value="carpentry">Carpentry &amp; Assembly</option>
+                <option value="painting">Painting &amp; Patching</option>
+                <option value="outdoor">Garden &amp; Outdoor</option>
+              </select>
+            </div>
+            <div class="flex flex-col gap-2">
+              <label
+                class="text-sm font-semibold text-slate-700 dark:text-slate-300"
+                >Project Description</label
+              >
+              <textarea
+                class="w-full rounded-lg border-slate-300 dark:border-slate-700 dark:bg-slate-800 dark:text-white focus:ring-primary focus:border-primary p-4 transition-all resize-none"
+                placeholder="Tell us about the job you need help with..."
+                rows="4"
+              ></textarea>
+            </div>
+            <div class="flex flex-col gap-2">
+              <label
+                class="text-sm font-semibold text-slate-700 dark:text-slate-300"
+                >Attach Photos (Optional)</label
+              >
+              <div
+                class="border-2 border-dashed border-slate-300 dark:border-slate-700 rounded-xl p-8 text-center bg-slate-50 dark:bg-slate-800/50 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors cursor-pointer group"
+              >
+                <span
+                  class="material-symbols-outlined text-4xl text-slate-400 group-hover:text-primary transition-colors mb-2"
+                  >cloud_upload</span
+                >
+                <p class="text-sm text-slate-600 dark:text-slate-400">
+                  Click or drag photos here to upload
+                </p>
+                <p class="text-xs text-slate-400 mt-1">
+                  Photos help us provide more accurate quotes
+                </p>
+              </div>
+            </div>
+            <button
+              class="w-full bg-primary text-white py-4 rounded-lg font-bold text-lg hover:shadow-lg hover:bg-opacity-95 transition-all transform hover:-translate-y-0.5"
+              type="submit"
+            >
+              Request My Free Quote
+            </button>
+          </form>
+        </div>
+        <!-- Right Side: Contact Info -->
+        <div class="lg:col-span-5 space-y-8">
+          <!-- Contact Details -->
+          <div
+            class="bg-white dark:bg-slate-900 rounded-xl shadow-sm border border-slate-200 dark:border-slate-800 p-6 sm:p-8"
+          >
+            <h3 class="text-xl font-bold text-primary dark:text-white mb-6">
+              Contact Information
+            </h3>
+            <div class="space-y-6">
+              <div class="flex items-start gap-4">
+                <div class="bg-primary/10 text-primary p-3 rounded-lg">
+                  <span class="material-symbols-outlined">call</span>
+                </div>
+                <div>
+                  <p
+                    class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-1"
+                  >
+                    Call or Text
+                  </p>
+                  <p class="text-lg font-semibold text-primary dark:text-white">
+                    0412 345 678
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="bg-primary/10 text-primary p-3 rounded-lg">
+                  <span class="material-symbols-outlined">mail</span>
+                </div>
+                <div>
+                  <p
+                    class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-1"
+                  >
+                    Email Us
+                  </p>
+                  <p class="text-lg font-semibold text-primary dark:text-white">
+                    hello@maxwellhandyman.com.au
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="bg-[#25D366]/10 text-[#25D366] p-3 rounded-lg">
+                  <span class="material-symbols-outlined text-fill-1"
+                    >chat</span
+                  >
+                </div>
+                <div class="flex-1">
+                  <p
+                    class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-1"
+                  >
+                    WhatsApp
+                  </p>
+                  <a
+                    class="inline-flex items-center gap-2 text-lg font-semibold text-[#25D366] hover:underline"
+                    href="#"
+                  >
+                    Chat with us on WhatsApp
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Business Hours -->
+          <div
+            class="bg-white dark:bg-slate-900 rounded-xl shadow-sm border border-slate-200 dark:border-slate-800 p-6"
+          >
+            <div class="flex items-center justify-between mb-4">
+              <h3 class="text-lg font-bold text-primary dark:text-white">
+                Business Hours
+              </h3>
+              <span
+                class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-100 text-emerald-700 text-xs font-bold uppercase tracking-wide"
+              >
+                <span
+                  class="size-2 rounded-full bg-emerald-500 animate-pulse"
+                ></span>
+                Open Now
+              </span>
+            </div>
+            <ul class="space-y-3">
+              <li class="flex justify-between text-sm">
+                <span class="text-slate-600 dark:text-slate-400"
+                  >Monday - Friday</span
+                >
+                <span class="font-semibold text-slate-900 dark:text-white"
+                  >7:00 AM - 6:00 PM</span
+                >
+              </li>
+              <li class="flex justify-between text-sm">
+                <span class="text-slate-600 dark:text-slate-400">Saturday</span>
+                <span class="font-semibold text-slate-900 dark:text-white"
+                  >8:00 AM - 4:00 PM</span
+                >
+              </li>
+              <li class="flex justify-between text-sm">
+                <span class="text-slate-600 dark:text-slate-400">Sunday</span>
+                <span
+                  class="font-semibold text-slate-900 dark:text-white italic"
+                  >Emergency Only</span
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Map / Service Area -->
+          <div
+            class="bg-white dark:bg-slate-900 rounded-xl shadow-sm border border-slate-200 dark:border-slate-800 overflow-hidden"
+          >
+            <div class="p-6">
+              <h3 class="text-lg font-bold text-primary dark:text-white mb-2">
+                Service Area
+              </h3>
+              <p class="text-sm text-slate-600 dark:text-slate-400">
+                Proudly serving Sydney's Eastern Suburbs and surrounding areas.
+              </p>
+            </div>
+            <div class="h-48 bg-slate-200 relative">
+              <div
+                class="absolute inset-0 bg-cover bg-center"
+                data-alt="Simplified map showing service area in Sydney Eastern Suburbs"
+                data-location="Sydney, Australia"
+                style="
+                  background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAAs0ezv-ad-4DSymHhZUeR23Xn98L8wdIMnzV02cmDrJBCn0r0jIGP-OXNN_zdvk0zaR-NNt8o1ATHxAfxSgwDW7klNJgsSQlpS-fE4eXB3gH76Z1D4h53nc06W7N41Gjug-qQarjPy32iu2KSTWBQt2r0mffvUpRv5-22Sky0J6HhLHfJnHxbXxskYoIss2fPbpdW4NFKt5rLq70QtM5odePh25YFDqTfKvflNhXjc25evwQK1R7lxfczDBk1QdoO4GSk_INVZZ4&quot;);
+                "
+              ></div>
+              <div
+                class="absolute inset-0 bg-primary/10 flex items-center justify-center"
+              >
+                <span class="material-symbols-outlined text-primary text-4xl"
+                  >location_on</span
+                >
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-3 py-1 bg-background-light dark:bg-slate-800 rounded-lg text-xs font-medium text-slate-600 dark:text-slate-300"
+                  >Bondi</span
+                >
+                <span
+                  class="px-3 py-1 bg-background-light dark:bg-slate-800 rounded-lg text-xs font-medium text-slate-600 dark:text-slate-300"
+                  >Coogee</span
+                >
+                <span
+                  class="px-3 py-1 bg-background-light dark:bg-slate-800 rounded-lg text-xs font-medium text-slate-600 dark:text-slate-300"
+                  >Randwick</span
+                >
+                <span
+                  class="px-3 py-1 bg-background-light dark:bg-slate-800 rounded-lg text-xs font-medium text-slate-600 dark:text-slate-300"
+                  >Surry Hills</span
+                >
+                <span
+                  class="px-3 py-1 bg-background-light dark:bg-slate-800 rounded-lg text-xs font-medium text-slate-600 dark:text-slate-300"
+                  >Double Bay</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Trust Footer Banner -->
+      <div
+        class="mt-16 bg-primary text-white rounded-2xl p-8 lg:p-12 text-center overflow-hidden relative"
+      >
+        <div class="relative z-10">
+          <div class="flex justify-center mb-6">
+            <div class="bg-white/20 p-4 rounded-full backdrop-blur-sm">
+              <span class="material-symbols-outlined text-4xl">timer</span>
+            </div>
+          </div>
+          <h3 class="text-2xl sm:text-3xl font-bold mb-4">
+            Fast Response Guaranteed
+          </h3>
+          <p class="text-xl text-white/80 font-medium">
+            We typically respond within 1 hour during business hours.
+          </p>
+        </div>
+        <!-- Decorative Background Element -->
+        <div
+          class="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 bg-white/5 rounded-full blur-3xl"
+        ></div>
+        <div
+          class="absolute bottom-0 left-0 -ml-16 -mb-16 w-64 h-64 bg-white/5 rounded-full blur-3xl"
+        ></div>
+      </div>
+    </main>
+    <footer
+      class="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 py-12 mt-12"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="flex flex-col md:flex-row justify-between items-center gap-8"
+        >
+          <div class="flex items-center gap-3">
+            <div class="text-primary dark:text-white">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                viewbox="0 0 48 48"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M24 4C25.7818 14.2173 33.7827 22.2182 44 24C33.7827 25.7818 25.7818 33.7827 24 44C22.2182 33.7827 14.2173 25.7818 4 24C14.2173 22.2182 22.2182 14.2173 24 4Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+            <span
+              class="text-primary dark:text-white font-bold tracking-tight uppercase text-sm"
+              >Maxwell Handyman Services</span
+            >
+          </div>
+          <div class="flex gap-8">
+            <a
+              class="text-slate-500 hover:text-primary transition-colors text-sm"
+              href="#"
+              >Privacy Policy</a
+            >
+            <a
+              class="text-slate-500 hover:text-primary transition-colors text-sm"
+              href="#"
+              >Terms of Service</a
+            >
+          </div>
+          <p class="text-slate-400 text-xs">
+            © 2024 Maxwell Handyman Services. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

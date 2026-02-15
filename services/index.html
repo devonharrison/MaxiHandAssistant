@@ -1,0 +1,659 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Service Details - Maxwell Handyman Services</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#002447",
+              "background-light": "#f5f7f8",
+              "background-dark": "#0f1923",
+            },
+            fontFamily: {
+              display: ["Inter", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        --checkbox-tick-svg: url("data:image/svg+xml,%3csvg viewBox=%270 0 16 16%27 fill=%27rgb(248,250,252)%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3cpath d=%27M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z%27/%3e%3c/svg%3e");
+      }
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen"
+  >
+    <!-- Header Section -->
+    <header
+      class="sticky top-0 z-50 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16 sm:h-20">
+          <!-- Logo -->
+          <div class="flex items-center gap-2 text-primary dark:text-white">
+            <span
+              class="material-symbols-outlined text-3xl"
+              data-icon="home_repair_service"
+              >home_repair_service</span
+            >
+            <h2 class="text-lg sm:text-xl font-bold tracking-tight">
+              Maxwell Handyman Services
+            </h2>
+          </div>
+          <!-- Navigation -->
+          <nav class="hidden md:flex items-center gap-8">
+            <a
+              class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-white transition-colors"
+              href="/"
+              >Home</a
+            >
+            <a
+              class="text-sm font-bold text-primary dark:text-white transition-colors border-b-2 border-primary"
+              href="../services/"
+              >Services</a
+            >
+            <a
+              class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-white transition-colors"
+              href="../about/"
+              >About</a
+            >
+            <a
+              class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-white transition-colors"
+              href="../contact/"
+              >Contact</a
+            >
+          </nav>
+          <!-- CTA & Profile -->
+          <div class="flex items-center gap-4">
+            <button
+              class="hidden sm:flex min-w-[120px] cursor-pointer items-center justify-center rounded-lg h-10 px-6 bg-primary text-white text-sm font-bold transition-all hover:bg-primary/90 hover:shadow-lg"
+            >
+              Book Now
+            </button>
+            <div
+              class="h-10 w-10 rounded-full bg-slate-200 dark:bg-slate-700 bg-cover bg-center border-2 border-white dark:border-slate-800 shadow-sm"
+              data-alt="Professional headshot of a service manager"
+              style="
+                background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuDp0IVN3iuvqy7-Bp_wYyVl47KKRQsCf3y6KNJLXe6bHWLC6zAxVTxAaDYQyiVSWSC2dgpAVmnCuJ9N8ggjFcG-tqU_Li8J33ZrRVbWZOMnvs5Wj15nfwG3SCRQnioSkBkGXo0gNXOKYGXQ2kstja3_IQBfZrLrH3f5sB9KVyn889-NnDdopznpFuHk9IbKg7h_XS3-N_kZ0egr_5wKjy9K7PjXn8bqhtkb7FUqRdsMe1lQswO8kop6N1Erb6D73efoeKYfRvLGQ7E&quot;);
+              "
+            ></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Hero Section -->
+    <section
+      class="relative h-[400px] md:h-[500px] flex items-center overflow-hidden"
+    >
+      <div class="absolute inset-0 z-0">
+        <div
+          class="absolute inset-0 bg-primary/40 mix-blend-multiply z-10"
+        ></div>
+        <img
+          alt="Handyman performing plumbing repairs"
+          class="w-full h-full object-cover"
+          data-alt="Professional plumber fixing a kitchen sink pipe"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoiQG55vjAxaNE50qJMvp3RNSmLERC4RtC8n1XHgKuVozUCckdgduukWM0hy7_bMX_AMIiy7X0cyERNKctc6Bp5PM8Cnd5aOhqKYmJz5Wfymik1ljAWHQEdWBaVF13pDeZid1joT5NRn6BUCBAMoe6bX-G1bPy-xjwU2FqJIpas1FwGF1hSwPeKNVt2uOU5aX-NGFcWPW27BsHAwRrWDeXZ6NaPsLfOu32o6-3lWsCBOlxTvsWj0zNwa0e-M3MBD1XESuF66Un4Jo"
+        />
+      </div>
+      <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div class="max-w-2xl">
+          <nav
+            class="flex mb-4 text-white/80 text-xs font-medium uppercase tracking-widest"
+          >
+            <span>Services</span>
+            <span class="mx-2">/</span>
+            <span class="text-white">Plumbing Repairs</span>
+          </nav>
+          <h1
+            class="text-4xl md:text-6xl font-black text-white leading-tight mb-6"
+          >
+            Plumbing Repairs in Brooklyn
+          </h1>
+          <p class="text-lg text-white/90 font-medium max-w-lg leading-relaxed">
+            Reliable, professional plumbing solutions for homeowners and
+            businesses across the Brooklyn area.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Main Content Grid -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        <!-- Left Column: Service Details -->
+        <div class="lg:col-span-8 space-y-16">
+          <!-- Intro Section -->
+          <section>
+            <h2 class="text-3xl font-bold text-primary dark:text-white mb-6">
+              Expert Plumbing Services You Can Count On
+            </h2>
+            <p
+              class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed"
+            >
+              At Maxwell Handyman Services, we understand that plumbing issues
+              can disrupt your daily life and cause significant damage if not
+              addressed promptly. Our team of skilled professionals specializes
+              in local plumbing repairs in Brooklyn, bringing over 15 years of
+              industry experience to every job. Whether it's a minor leak or a
+              major installation, we provide efficient, clean, and reliable
+              service tailored to the unique infrastructure of Brooklyn homes.
+            </p>
+          </section>
+          <!-- Benefits Section -->
+          <section
+            class="bg-primary/5 dark:bg-white/5 rounded-2xl p-8 border border-primary/10"
+          >
+            <h3 class="text-2xl font-bold text-primary dark:text-white mb-8">
+              Why Choose Our Plumbing Service?
+            </h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div class="flex gap-4">
+                <div
+                  class="flex-shrink-0 w-12 h-12 rounded-xl bg-primary text-white flex items-center justify-center"
+                >
+                  <span class="material-symbols-outlined">verified_user</span>
+                </div>
+                <div>
+                  <h4 class="font-bold text-primary dark:text-white">
+                    Licensed Pros
+                  </h4>
+                  <p class="text-sm text-slate-600 dark:text-slate-400">
+                    Fully certified and background-checked technicians for your
+                    peace of mind.
+                  </p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <div
+                  class="flex-shrink-0 w-12 h-12 rounded-xl bg-primary text-white flex items-center justify-center"
+                >
+                  <span class="material-symbols-outlined">payments</span>
+                </div>
+                <div>
+                  <h4 class="font-bold text-primary dark:text-white">
+                    Upfront Pricing
+                  </h4>
+                  <p class="text-sm text-slate-600 dark:text-slate-400">
+                    No hidden fees or surprise costs. We provide clear,
+                    transparent quotes.
+                  </p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <div
+                  class="flex-shrink-0 w-12 h-12 rounded-xl bg-primary text-white flex items-center justify-center"
+                >
+                  <span class="material-symbols-outlined">schedule</span>
+                </div>
+                <div>
+                  <h4 class="font-bold text-primary dark:text-white">
+                    Same-Day Service
+                  </h4>
+                  <p class="text-sm text-slate-600 dark:text-slate-400">
+                    Available for urgent repairs to minimize damage and
+                    downtime.
+                  </p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <div
+                  class="flex-shrink-0 w-12 h-12 rounded-xl bg-primary text-white flex items-center justify-center"
+                >
+                  <span class="material-symbols-outlined">thumb_up</span>
+                </div>
+                <div>
+                  <h4 class="font-bold text-primary dark:text-white">
+                    Guaranteed Work
+                  </h4>
+                  <p class="text-sm text-slate-600 dark:text-slate-400">
+                    Every repair is backed by our satisfaction guarantee and
+                    warranty.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- What's Included Section -->
+          <section>
+            <h3 class="text-2xl font-bold text-primary dark:text-white mb-8">
+              What's Included in This Service
+            </h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div
+                class="flex items-center gap-3 p-4 rounded-lg bg-white dark:bg-slate-800 shadow-sm border border-slate-100 dark:border-slate-700"
+              >
+                <span class="material-symbols-outlined text-green-600"
+                  >check_circle</span
+                >
+                <span class="font-medium">Leak detection and repair</span>
+              </div>
+              <div
+                class="flex items-center gap-3 p-4 rounded-lg bg-white dark:bg-slate-800 shadow-sm border border-slate-100 dark:border-slate-700"
+              >
+                <span class="material-symbols-outlined text-green-600"
+                  >check_circle</span
+                >
+                <span class="font-medium"
+                  >Faucet &amp; fixture installation</span
+                >
+              </div>
+              <div
+                class="flex items-center gap-3 p-4 rounded-lg bg-white dark:bg-slate-800 shadow-sm border border-slate-100 dark:border-slate-700"
+              >
+                <span class="material-symbols-outlined text-green-600"
+                  >check_circle</span
+                >
+                <span class="font-medium">Drain cleaning and unclogging</span>
+              </div>
+              <div
+                class="flex items-center gap-3 p-4 rounded-lg bg-white dark:bg-slate-800 shadow-sm border border-slate-100 dark:border-slate-700"
+              >
+                <span class="material-symbols-outlined text-green-600"
+                  >check_circle</span
+                >
+                <span class="font-medium">Toilet repair and replacement</span>
+              </div>
+              <div
+                class="flex items-center gap-3 p-4 rounded-lg bg-white dark:bg-slate-800 shadow-sm border border-slate-100 dark:border-slate-700"
+              >
+                <span class="material-symbols-outlined text-green-600"
+                  >check_circle</span
+                >
+                <span class="font-medium">Water heater maintenance</span>
+              </div>
+              <div
+                class="flex items-center gap-3 p-4 rounded-lg bg-white dark:bg-slate-800 shadow-sm border border-slate-100 dark:border-slate-700"
+              >
+                <span class="material-symbols-outlined text-green-600"
+                  >check_circle</span
+                >
+                <span class="font-medium">Pipe insulation and winterizing</span>
+              </div>
+            </div>
+          </section>
+          <!-- Recent Work Gallery -->
+          <section>
+            <div class="flex items-end justify-between mb-8">
+              <div>
+                <h3 class="text-2xl font-bold text-primary dark:text-white">
+                  Recent Projects
+                </h3>
+                <p class="text-slate-500 mt-1">
+                  Real results for real neighbors in Brooklyn.
+                </p>
+              </div>
+              <a class="text-primary font-bold text-sm hover:underline" href="#"
+                >View All Projects</a
+              >
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+              <div class="group relative overflow-hidden rounded-xl h-48">
+                <img
+                  alt="Bathroom sink repair"
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  data-alt="Close up of modern bathroom faucet repair"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAE06Q_aykCf0YeJyji9FeuZqn-0B3HSUVIfCNSDsVVPIokrkdZstkcZzP44523Q9jW4M5umCx_7hBkWjB0oX3GKS7EOHrm7tzS9qPWHgf1iVEE7oOXFnJQrwIjscKFgK-pDlztPm2v52Zw_2FI5yp1BRvS7UNPf8d0cY0WLxClAVVWZFJXTnu-mTccAVCtob4lUbK-gna2liBLqIaZX-PVnaGMlC1J5zIa0Yn76bR632omW6RwiQacZeCjSFss0K63ZN5ik808kEM"
+                />
+              </div>
+              <div class="group relative overflow-hidden rounded-xl h-48">
+                <img
+                  alt="Pipe installation"
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  data-alt="New copper piping installed in a basement"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZXB-ucTVjpc1upnLEk8dNULx8ZmF5gR69Tp6oUq2u6LJel9DnfdiwQEMfAeXJgqKEHoas1TRdAzJHQFt1KoOXdnsGOrHLADXzxuq3sbDUjDGgTMOC9TXOTe4LZ4hgGE6ir2U494OSGjX6pbyc6XJO-5VHZwN4I6-8gqNo0HSFLEtXfdPMTRpeMBMPn6twv_QBHFAtwZiU0oXWyorbKdX3IWSLPSTxKdsct6pskTBCTe9js2ueoKvAheG7SefBfc4YZO9a33OD6ew"
+                />
+              </div>
+              <div class="group relative overflow-hidden rounded-xl h-48">
+                <img
+                  alt="Kitchen renovation plumbing"
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  data-alt="Plumber installing a new kitchen island sink"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkEjc0cVh4wK1x-h5vgQwWwF-rydztVslTbvmvF4513ZNWHHtyfVWQCh9lLWr9H11ASZqc8nvrKYqzUHOm6IuLPiysV11re1XgZoB-a0X4Hdpvx6t0wkrrzATbDSnDgFpplIIKlz7gQlxRWgoZhdRPsx_NJBU6TzsMlNqBwAee23eeV2ibAkCxZFQGdyw5IbcTwCow6zEsOxciUxITj25OqUIEdCvwNEhGPeRq0jlwywyx9Yd2a8hS19BZIfPJUlyVkKK6_MlFTpw"
+                />
+              </div>
+              <div class="group relative overflow-hidden rounded-xl h-48">
+                <img
+                  alt="Outdoor fixture repair"
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  data-alt="Maintenance of an outdoor garden water tap"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaxOOQdrm-yU5PcMC7oyxH8KBZ65IyyeMArKSShPO7Ut1VzdXGHXVwqrZxiNXo5m73iMII_ZCK3NxAv92r7J9cXUm43HM8YJySYneizXmfUdzInwdu3VW523X7RqtDMzbt3JhH3oVsN7ZFE4zpv0oDbBAQ7e-YL1P6tjg_yI54XVJ6YX1WC3_K0H21zN7Nxz80m89Gz9fRLSV3dqIRS2Ybn0dd4k6WEUnT0DSlruNKhxQKHrq2nf8rhS1MomQcwZC-rgBsMPvUcoM"
+                />
+              </div>
+            </div>
+          </section>
+          <!-- FAQ Section -->
+          <section>
+            <h3 class="text-2xl font-bold text-primary dark:text-white mb-8">
+              Frequently Asked Questions
+            </h3>
+            <div class="space-y-4">
+              <details
+                class="group bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700"
+                open=""
+              >
+                <summary
+                  class="flex items-center justify-between p-5 cursor-pointer list-none"
+                >
+                  <span class="font-bold text-primary dark:text-white"
+                    >How much do you charge for a service call?</span
+                  >
+                  <span
+                    class="material-symbols-outlined transition-transform group-open:rotate-180"
+                    >expand_more</span
+                  >
+                </summary>
+                <div class="px-5 pb-5 text-slate-600 dark:text-slate-400">
+                  We offer a flat-rate diagnostic fee for the initial visit.
+                  Once the issue is identified, we provide a full upfront quote
+                  for the repair. If you proceed with the service, the
+                  diagnostic fee is often applied toward the final cost.
+                </div>
+              </details>
+              <details
+                class="group bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700"
+              >
+                <summary
+                  class="flex items-center justify-between p-5 cursor-pointer list-none"
+                >
+                  <span class="font-bold text-primary dark:text-white"
+                    >Do you offer emergency 24/7 services?</span
+                  >
+                  <span
+                    class="material-symbols-outlined transition-transform group-open:rotate-180"
+                    >expand_more</span
+                  >
+                </summary>
+                <div class="px-5 pb-5 text-slate-600 dark:text-slate-400">
+                  Yes, we offer priority emergency scheduling for major leaks
+                  and pipe bursts in the Brooklyn area. Contact our hotline
+                  directly for immediate assistance.
+                </div>
+              </details>
+              <details
+                class="group bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700"
+              >
+                <summary
+                  class="flex items-center justify-between p-5 cursor-pointer list-none"
+                >
+                  <span class="font-bold text-primary dark:text-white"
+                    >Are your repairs covered by a warranty?</span
+                  >
+                  <span
+                    class="material-symbols-outlined transition-transform group-open:rotate-180"
+                    >expand_more</span
+                  >
+                </summary>
+                <div class="px-5 pb-5 text-slate-600 dark:text-slate-400">
+                  Absolutely. We provide a 1-year workmanship warranty on all
+                  plumbing repairs and installations, in addition to any
+                  manufacturer warranties on parts used.
+                </div>
+              </details>
+            </div>
+          </section>
+        </div>
+        <!-- Right Column: Sidebar CTA -->
+        <aside class="lg:col-span-4">
+          <div class="sticky top-24 space-y-6">
+            <!-- CTA Card -->
+            <div class="bg-primary rounded-2xl p-8 text-white shadow-xl">
+              <h3 class="text-2xl font-black mb-4">Need Plumbing Repairs?</h3>
+              <p class="text-white/80 mb-8 leading-relaxed">
+                Get a professional estimate for your home or office project
+                today. Our experts are ready to help.
+              </p>
+              <div class="space-y-4">
+                <button
+                  class="w-full bg-white text-primary flex items-center justify-center gap-3 py-4 rounded-xl font-bold hover:bg-slate-100 transition-all"
+                >
+                  <span class="material-symbols-outlined">call</span>
+                  Call (555) 123-4567
+                </button>
+                <button
+                  class="w-full bg-[#25D366] text-white flex items-center justify-center gap-3 py-4 rounded-xl font-bold hover:opacity-90 transition-all"
+                >
+                  <svg
+                    class="w-6 h-6 fill-current"
+                    viewbox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                    ></path>
+                  </svg>
+                  WhatsApp Chat
+                </button>
+              </div>
+              <p class="text-center text-xs text-white/60 mt-6">
+                Average response time: 15 minutes
+              </p>
+            </div>
+            <!-- Map/Service Area Placeholder -->
+            <div
+              class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-slate-200 dark:border-slate-700 overflow-hidden"
+            >
+              <h4
+                class="font-bold text-primary dark:text-white mb-4 flex items-center gap-2"
+              >
+                <span class="material-symbols-outlined text-sm"
+                  >location_on</span
+                >
+                Serving All of Brooklyn
+              </h4>
+              <div
+                class="aspect-square bg-slate-200 dark:bg-slate-700 rounded-lg relative overflow-hidden group"
+              >
+                <div
+                  class="absolute inset-0 bg-primary/10 transition-opacity group-hover:opacity-0"
+                ></div>
+                <img
+                  alt="Map of Brooklyn"
+                  class="w-full h-full object-cover"
+                  data-location="Brooklyn, New York"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0U3UvjAJkE5DIMXwiKABa2x7ke-7BMGahUT_LJOX6b9yWHENKybJD2-LZwCt42zcqtMrq_GSSkF8HjWjzfYmr8Or6TxnSfPktlHhsR92nbbbSlkY2VmpxPiSq9SWJ_F2tLiN_OgiYbV-mUHBNR0K4eC__BjOaSoNWV9HTfsGdTFYjOto99pU8aiX6v4aD3V2jb4laKTxyVJ_3xY6zGepdFXtqlsTuFU0lAHCw5vcrKuOfGBl4l1pBGjugml3lc3yEfYX_GnGvw_Q"
+                />
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+    <!-- Internal Links Section -->
+    <section
+      class="bg-white dark:bg-slate-900 py-16 border-t border-slate-200 dark:border-slate-800"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div>
+            <h3 class="text-xl font-bold text-primary dark:text-white mb-6">
+              Related Services
+            </h3>
+            <div class="grid grid-cols-2 gap-3">
+              <a
+                class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-blue-400 flex items-center gap-2"
+                href="#"
+              >
+                <span class="material-symbols-outlined text-xs"
+                  >arrow_forward</span
+                >
+                Electrical Repairs
+              </a>
+              <a
+                class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-blue-400 flex items-center gap-2"
+                href="#"
+              >
+                <span class="material-symbols-outlined text-xs"
+                  >arrow_forward</span
+                >
+                Appliance Install
+              </a>
+              <a
+                class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-blue-400 flex items-center gap-2"
+                href="#"
+              >
+                <span class="material-symbols-outlined text-xs"
+                  >arrow_forward</span
+                >
+                Kitchen Remodel
+              </a>
+              <a
+                class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-blue-400 flex items-center gap-2"
+                href="#"
+              >
+                <span class="material-symbols-outlined text-xs"
+                  >arrow_forward</span
+                >
+                Drywall Repair
+              </a>
+              <a
+                class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-blue-400 flex items-center gap-2"
+                href="#"
+              >
+                <span class="material-symbols-outlined text-xs"
+                  >arrow_forward</span
+                >
+                Paint Touch-ups
+              </a>
+              <a
+                class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-blue-400 flex items-center gap-2"
+                href="#"
+              >
+                <span class="material-symbols-outlined text-xs"
+                  >arrow_forward</span
+                >
+                Cabinet Fixing
+              </a>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-primary dark:text-white mb-6">
+              Areas We Serve
+            </h3>
+            <div class="grid grid-cols-2 gap-3">
+              <a
+                class="text-slate-600 dark:text-slate-400 hover:text-primary flex items-center gap-2"
+                href="#"
+              >
+                <span class="material-symbols-outlined text-xs text-primary/40"
+                  >location_on</span
+                >
+                Williamsburg
+              </a>
+              <a
+                class="text-slate-600 dark:text-slate-400 hover:text-primary flex items-center gap-2"
+                href="#"
+              >
+                <span class="material-symbols-outlined text-xs text-primary/40"
+                  >location_on</span
+                >
+                Park Slope
+              </a>
+              <a
+                class="text-slate-600 dark:text-slate-400 hover:text-primary flex items-center gap-2"
+                href="#"
+              >
+                <span class="material-symbols-outlined text-xs text-primary/40"
+                  >location_on</span
+                >
+                Bushwick
+              </a>
+              <a
+                class="text-slate-600 dark:text-slate-400 hover:text-primary flex items-center gap-2"
+                href="#"
+              >
+                <span class="material-symbols-outlined text-xs text-primary/40"
+                  >location_on</span
+                >
+                Greenpoint
+              </a>
+              <a
+                class="text-slate-600 dark:text-slate-400 hover:text-primary flex items-center gap-2"
+                href="#"
+              >
+                <span class="material-symbols-outlined text-xs text-primary/40"
+                  >location_on</span
+                >
+                Bed-Stuy
+              </a>
+              <a
+                class="text-slate-600 dark:text-slate-400 hover:text-primary flex items-center gap-2"
+                href="#"
+              >
+                <span class="material-symbols-outlined text-xs text-primary/40"
+                  >location_on</span
+                >
+                Dumbo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-primary py-12 text-white/60">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="flex flex-col md:flex-row items-center justify-between gap-8"
+        >
+          <div class="flex items-center gap-3">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              viewbox="0 0 48 48"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M24 4C25.7818 14.2173 33.7827 22.2182 44 24C33.7827 25.7818 25.7818 33.7827 24 44C22.2182 33.7827 14.2173 25.7818 4 24C14.2173 22.2182 22.2182 14.2173 24 4Z"
+                fill="white"
+              ></path>
+            </svg>
+            <span class="text-white font-bold">Maxwell Handyman Services</span>
+          </div>
+          <div class="flex gap-8 text-sm">
+            <a class="hover:text-white" href="#">Privacy Policy</a>
+            <a class="hover:text-white" href="#">Terms of Service</a>
+            <a class="hover:text-white" href="#">Contact Us</a>
+          </div>
+          <div class="text-sm">
+            © 2024 Maxwell Handyman Services. Licensed &amp; Insured.
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
