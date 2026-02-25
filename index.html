@@ -74,38 +74,34 @@
               Maxwell Handyman Services
             </h2>
           </div>
-          <!-- Navigation -->
-          <nav class="hidden md:flex items-center gap-8">
-            <a
-              class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-white transition-colors"
-              href="services/"
-              >Services</a
-            >
-            <a
-              class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-white transition-colors"
-              href="about/"
-              >About</a
-            >
-            <a
-              class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-white transition-colors"
-              href="contact/"
-              >Contact</a
-            >
-          </nav>
+
           <!-- CTA & Profile -->
           <div class="flex items-center gap-4">
+            <!-- Navigation -->
+            <nav
+              class="flex md:flex items-center gap-4 md:gap-8 text-xs sm:text-sm"
+            >
+              <a
+                class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-white transition-colors"
+                href="services/"
+                >Services</a
+              >
+              <a
+                class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-white transition-colors"
+                href="about/"
+                >About</a
+              >
+              <a
+                class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-white transition-colors"
+                href="contact/"
+                >Contact</a
+              >
+            </nav>
             <button
-              class="hidden sm:flex min-w-[120px] cursor-pointer items-center justify-center rounded-lg h-10 px-6 bg-primary text-white text-sm font-bold transition-all hover:bg-primary/90 hover:shadow-lg"
+              class="flex min-w-[120px] cursor-pointer items-center justify-center rounded-lg h-10 px-6 bg-primary text-white text-xs sm:text-sm font-bold transition-all hover:bg-primary/90 hover:shadow-lg"
             >
               Book Now
             </button>
-            <div
-              class="h-10 w-10 rounded-full bg-slate-200 dark:bg-slate-700 bg-cover bg-center border-2 border-white dark:border-slate-800 shadow-sm"
-              data-alt="Professional headshot of a service manager"
-              style="
-                background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuDp0IVN3iuvqy7-Bp_wYyVl47KKRQsCf3y6KNJLXe6bHWLC6zAxVTxAaDYQyiVSWSC2dgpAVmnCuJ9N8ggjFcG-tqU_Li8J33ZrRVbWZOMnvs5Wj15nfwG3SCRQnioSkBkGXo0gNXOKYGXQ2kstja3_IQBfZrLrH3f5sB9KVyn889-NnDdopznpFuHk9IbKg7h_XS3-N_kZ0egr_5wKjy9K7PjXn8bqhtkb7FUqRdsMe1lQswO8kop6N1Erb6D73efoeKYfRvLGQ7E&quot;);
-              "
-            ></div>
           </div>
         </div>
       </div>
@@ -147,13 +143,17 @@
           <div
             class="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl bg-slate-200"
           >
-            <div
-              class="w-full h-full bg-cover bg-center"
-              data-alt="Professional handyman working with high quality tools in a modern home"
-              style="
-                background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAHKPPEFdTkZNtjTQl9N4KeMviLo5zy8RVZ5a64Kf57Zn02ebpH7ZQJ1pdQu5_Zc_GQgwD83vA182C5SaJ1PmkPqDqkIYLiLYmr-ZRa7V7f_tBMuVPBMnI0Ptz_JxzcK8AWtqkevII7bVzfACAS3QjuzVpTGGQRTVJ7i4sb3jmQytgafjvSju2W3o2Jukcx-aZBna8BvB6YaXai0RENKZ0RGLZpjyEIZJR7vRUyCVSMHxNFQBwOPzfcNQqujl9r2iFreOoYYz9o2m4&quot;);
+            <img
+              src="/assets/images/maxwell-working.webp"
+              srcset="
+                /assets/images/maxwell-working.webp  800w,
+                /assets/images/maxwell-working.webp 1200w
               "
-            ></div>
+              sizes="(max-width: 768px) 100vw, 600px"
+              alt="Maxwell professional handyman working in a Cape Town home"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
           </div>
           <div
             class="absolute -bottom-6 -left-6 bg-white dark:bg-slate-800 p-6 rounded-xl shadow-lg border border-primary/10 hidden lg:block"
@@ -460,13 +460,14 @@
         <div
           class="bg-primary rounded-3xl p-1 w-full aspect-square overflow-hidden shadow-2xl"
         >
-          <div
-            class="w-full h-full bg-cover bg-center rounded-[1.4rem]"
-            data-alt="A smiling handyman professional holding a toolbox"
-            style="
-              background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuDrAyVayxsF3LlwSIpnH0K28xuIr2Mzllqu5WHzWtpcOsSvMDXwEbNDEImD7ZLWWQOzbOskwImhPIsRashCNHHyBHa8ReGDydL47wshxUVcuZDLAF0kjStjH4PoKv-xbB3qeuL1GxmMWnsHf8KxTCQrNWjhWQZpeVNyBfDa0fYgwG4VkscknU7Pd5XfGwT5iDzOwnETTesUuejNTilkv5wfIfXtdD0PPqaZvKooH7Tvw6kdtZJH5EvqP7tjIlqC0QXkvc_3_ChGSNw&quot;);
-            "
-          ></div>
+          <div class="w-full h-full rounded-[1.4rem] overflow-hidden">
+            <img
+              src="/assets/images/maxwell-portrait.webp"
+              alt="Maxwell smiling handyman in Cape Town holding a toolbox"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
         </div>
       </div>
     </section>
@@ -814,7 +815,7 @@
             <a class="hover:text-white" href="#">Sitemap</a>
           </div>
           <p class="text-slate-500 text-sm">
-            © 2024 Maxwell Handyman Services. All rights reserved.
+            © 2026 Maxwell Handyman Services. All rights reserved.
           </p>
         </div>
       </div>
