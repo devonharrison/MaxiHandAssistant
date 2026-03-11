@@ -139,7 +139,7 @@
             >
             Quote Request Form
           </h2>
-          <form class="space-y-6">
+          <form id="quote-form" class="space-y-6">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div class="flex flex-col gap-2">
                 <label
@@ -163,11 +163,12 @@
                   id="phone"
                   name="phone"
                   class="w-full rounded-lg border-slate-300 dark:border-slate-700 dark:bg-slate-800 dark:text-white focus:ring-primary focus:border-primary h-12 px-4 transition-all"
-                  placeholder="e.g. 0412 345 678"
+                  placeholder="e.g. 083 123 4567"
                   type="tel"
                 />
               </div>
             </div>
+
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div class="flex flex-col gap-2">
                 <label
@@ -191,11 +192,12 @@
                   id="suburb"
                   name="suburb"
                   class="w-full rounded-lg border-slate-300 dark:border-slate-700 dark:bg-slate-800 dark:text-white focus:ring-primary focus:border-primary h-12 px-4 transition-all"
-                  placeholder="e.g. Bondi Junction"
+                  placeholder="e.g. Cape Town"
                   type="text"
                 />
               </div>
             </div>
+
             <div class="flex flex-col gap-2">
               <label
                 class="text-sm font-semibold text-slate-700 dark:text-slate-300"
@@ -212,17 +214,14 @@
                 <option value="Electrical Maintenance">
                   Electrical Maintenance
                 </option>
-                <option value="Carpentry &amp; Assembly">
-                  Carpentry &amp; Assembly
+                <option value="Carpentry & Assembly">
+                  Carpentry & Assembly
                 </option>
-                <option value="Painting &amp; Patching">
-                  Painting &amp; Patching
-                </option>
-                <option value="Garden &amp; Outdoor">
-                  Garden &amp; Outdoor
-                </option>
+                <option value="Painting & Patching">Painting & Patching</option>
+                <option value="Garden & Outdoor">Garden & Outdoor</option>
               </select>
             </div>
+
             <div class="flex flex-col gap-2">
               <label
                 class="text-sm font-semibold text-slate-700 dark:text-slate-300"
@@ -235,26 +234,6 @@
                 placeholder="Tell us about the job you need help with..."
                 rows="4"
               ></textarea>
-            </div>
-            <div class="flex flex-col gap-2">
-              <label
-                class="text-sm font-semibold text-slate-700 dark:text-slate-300"
-                >Attach Photos (Optional)</label
-              >
-              <div
-                class="border-2 border-dashed border-slate-300 dark:border-slate-700 rounded-xl p-8 text-center bg-slate-50 dark:bg-slate-800/50 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors cursor-pointer group"
-              >
-                <span
-                  class="material-symbols-outlined text-4xl text-slate-400 group-hover:text-primary transition-colors mb-2"
-                  >cloud_upload</span
-                >
-                <p class="text-sm text-slate-600 dark:text-slate-400">
-                  Click or drag photos here to upload
-                </p>
-                <p class="text-xs text-slate-400 mt-1">
-                  Photos help us provide more accurate quotes
-                </p>
-              </div>
             </div>
             <button
               class="w-full bg-primary text-white py-4 rounded-lg font-bold text-lg hover:shadow-lg hover:bg-opacity-95 transition-all transform hover:-translate-y-0.5"
@@ -373,60 +352,6 @@
                 >
               </li>
             </ul>
-          </div>
-          <!-- Map / Service Area -->
-          <div
-            class="bg-white dark:bg-slate-900 rounded-xl shadow-sm border border-slate-200 dark:border-slate-800 overflow-hidden"
-          >
-            <div class="p-6">
-              <h3 class="text-lg font-bold text-primary dark:text-white mb-2">
-                Service Area
-              </h3>
-              <p class="text-sm text-slate-600 dark:text-slate-400">
-                Proudly serving Sydney's Eastern Suburbs and surrounding areas.
-              </p>
-            </div>
-            <div class="h-48 bg-slate-200 relative">
-              <div
-                class="absolute inset-0 bg-cover bg-center"
-                data-alt="Simplified map showing service area in Sydney Eastern Suburbs"
-                data-location="Sydney, Australia"
-                style="
-                  background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAAs0ezv-ad-4DSymHhZUeR23Xn98L8wdIMnzV02cmDrJBCn0r0jIGP-OXNN_zdvk0zaR-NNt8o1ATHxAfxSgwDW7klNJgsSQlpS-fE4eXB3gH76Z1D4h53nc06W7N41Gjug-qQarjPy32iu2KSTWBQt2r0mffvUpRv5-22Sky0J6HhLHfJnHxbXxskYoIss2fPbpdW4NFKt5rLq70QtM5odePh25YFDqTfKvflNhXjc25evwQK1R7lxfczDBk1QdoO4GSk_INVZZ4&quot;);
-                "
-              ></div>
-              <div
-                class="absolute inset-0 bg-primary/10 flex items-center justify-center"
-              >
-                <span class="material-symbols-outlined text-primary text-4xl"
-                  >location_on</span
-                >
-              </div>
-            </div>
-            <div class="p-6">
-              <div class="flex flex-wrap gap-2">
-                <span
-                  class="px-3 py-1 bg-background-light dark:bg-slate-800 rounded-lg text-xs font-medium text-slate-600 dark:text-slate-300"
-                  >Bondi</span
-                >
-                <span
-                  class="px-3 py-1 bg-background-light dark:bg-slate-800 rounded-lg text-xs font-medium text-slate-600 dark:text-slate-300"
-                  >Coogee</span
-                >
-                <span
-                  class="px-3 py-1 bg-background-light dark:bg-slate-800 rounded-lg text-xs font-medium text-slate-600 dark:text-slate-300"
-                  >Randwick</span
-                >
-                <span
-                  class="px-3 py-1 bg-background-light dark:bg-slate-800 rounded-lg text-xs font-medium text-slate-600 dark:text-slate-300"
-                  >Surry Hills</span
-                >
-                <span
-                  class="px-3 py-1 bg-background-light dark:bg-slate-800 rounded-lg text-xs font-medium text-slate-600 dark:text-slate-300"
-                  >Double Bay</span
-                >
-              </div>
-            </div>
           </div>
         </div>
       </div>
