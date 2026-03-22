@@ -2,7 +2,7 @@
 
 // 1. Keep Maxwell's number in ONE place
 // Format: country code + number, no "+" and no leading 0
-const maxwellNumber = "27837000258"; // 🔁 <-- update to his real number
+const maxwellNumber = "27847614830"; // 🔁 <-- update to his real number
 
 document.addEventListener("DOMContentLoaded", () => {
   // 2. Generic WhatsApp buttons/links (anywhere on any page)
